@@ -4,7 +4,7 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
 
-    // Şimdilik console'a yaz (production'da Google Sheets'e yazacak)
+    // Console'a yaz (production'da Google Sheets'e yazacak)
     console.log('📊 Scroll Event:', {
       contractId: body.contractId,
       event: body.event,
@@ -24,16 +24,3 @@ export async function POST(request: NextRequest) {
     );
   }
 }
-```
-
-**Commit changes**
-
----
-
-## ✅ Tamamlandı!
-
-Şimdi Vercel otomatik deploy yapacak. **2-3 dakika** bekleyin.
-
-Sonra şu URL'ye gidin:
-```
-https://sozlesme-test-xxx.vercel.app
